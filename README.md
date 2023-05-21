@@ -38,3 +38,4 @@ Web застосунок для спрощення роботи секретар
 
 Проект доступний за посиланням:
 https://viacheslavbabenko.github.io/Step-Project-Cards/
+Посилання для реестрації профілю: https://ajax.test-danit.com/front-pages/cards-register.html
