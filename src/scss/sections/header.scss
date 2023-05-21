@@ -1,0 +1,114 @@
+.container {
+  max-width: 1280px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 10px;
+}
+.header {
+  background-color: #202657;
+  font-size: 24px;
+  line-height: 33px;
+  margin-bottom: 30px;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    min-height: 110px;
+  }
+
+  &__logo {
+    color: #ffffff;
+  }
+
+  &__button {
+    color: #ffffff;
+  }
+  &__button--login::before {
+    content: "";
+    background-image: url(/src/img/header-icons/logInIcon.svg);
+    height: 32px;
+    width: 32px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 24px;
+  }
+
+  &__button--visit {
+    display: none;
+    background: #ffffff;
+    border-radius: 32px;
+    color: #424242;
+    box-shadow: 0px -23px 25px 0px rgba(0, 0, 0, 0.17) inset,
+      0px -36px 30px 0px rgba(0, 0, 0, 0.15) inset,
+      0px -79px 40px 0px rgba(0, 0, 0, 0.1) inset,
+      0px 2px 1px rgba(0, 0, 0, 0.06), 0px 4px 2px rgba(0, 0, 0, 0.09),
+      0px 8px 4px rgba(0, 0, 0, 0.09), 0px 16px 8px rgba(0, 0, 0, 0.09);
+    transition: box-shadow 0.3s ease;
+    padding: 7px 20px;
+    &:hover {
+      background-color: #ffffff;
+      box-shadow: none;
+    }
+  }
+  &__button--visit::before {
+    content: "";
+    background-image: url(/src/img/header-icons/createBtn.svg);
+    height: 24px;
+    width: 24px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    display: inline-block;
+    vertical-align: middle;
+    margin-right: 18px;
+    position: relative;
+    bottom: 2px;
+  }
+}
+
+.header__logo::after {
+  content: "";
+  background-image: url(/src/img/header-icons/logo.svg);
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+  vertical-align: middle;
+  margin-left: 20px;
+  width: 40px;
+  height: 40px;
+}
+
+.filter-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.filter-form {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  gap: 50px;
+  font-size: 16px;
+  line-height: 22px;
+  &__input {
+    border: none;
+    background-color: #d9d9d9;
+    width: 240px;
+    background-image: url(/src/img/header-icons/inputSVG.svg);
+    background-position: 20px center; /* вирівнюємо зображення зліва */
+    background-repeat: no-repeat;
+    border-radius: 20px;
+    padding: 10px 0 10px 45px;
+  }
+  &__select {
+    border-radius: 20px;
+    width: 240px;
+    padding: 10px 20px;
+    border: none;
+    background-color: #d9d9d9;
+    text-align: center;
+  }
+}

@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="shortcut icon" href="#" type="image/x-icon" />
+    <title>Medical Clinic</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__container">
+          <a class="header__logo" href="#">Medical Clinic</a>
+          <div class="header__buttons">
+            <a class="header__button header__button--login" href="#">Log in</a>
+            <a class="header__button header__button--visit" href="#"
+              >Create visit</a
+            >
+          </div>
+        </div>
+      </div>
+    </header>
+    <section class="filter-section">
+      <div class="container">
+        <div class="filter-form">
+          <input
+            class="filter-form__input"
+            type="text"
+            placeholder="Search by patient"
+          />
+          <select name="cards" id="cardState" class="filter-form__select">
+            <option value="all" class="filter-form__option" selected>all</option>
+            <option class="filter-form__option">open</option>
+            <option class="filter-form__option">done</option>
+          </select>
+          <select name="urgency" id="urgency" class="filter-form__select">
+            <option value="all" class="filter-form__option" selected>all</option>
+            <option class="filter-form__option">high</option>
+            <option class="filter-form__option">normal</option>
+            <option class="filter-form__option">low</option>
+          </select>
+        </div>
+      </div>
+    </section>
+    <section class="cards-field">
+      <div class="container">
+        <div class="cards-wrap">
+          <p class="no-cards-text">No items have been added</p>
+          <ul class="cards-list">
+            <!-- <li class="card-item">
+              <div class="cards-item__closed-btn closed-btn">
+                <span class="closed-btn__line"></span>
+                <span class="closed-btn__line"></span>
+              </div>
+
+              <h3 class="card-item__patient">Kris Novik1</h3>
+              <p class="card-item__doctor">pediatrician</p>
+
+              <div class="card-item__info">
+                <p class="info__descr info__descr--objective">
+                  The purpose of the visit
+                </p>
+                <p class="info__descr info__descr--short">
+                  The brief description of the visit
+                </p>
+                <p class="info__descr info__descr--urgency">
+                  Urgency: <span>high</span>
+                </p>
+              </div>
+
+              <div class="card-item__buttons">
+                <button class="card-item__button button--edit">
+                  <svg
+                    style="color: rgb(0, 0, 0)"
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="12"
+                    height="12"
+                    fill="currentColor"
+                    class="bi bi-pencil"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      d="M12.146.146a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1 0 .708l-10 10a.5.5 0 0 1-.168.11l-5 2a.5.5 0 0 1-.65-.65l2-5a.5.5 0 0 1 .11-.168l10-10zM11.207 2.5 13.5 4.793 14.793 3.5 12.5 1.207 11.207 2.5zm1.586 3L10.5 3.207 4 9.707V10h.5a.5.5 0 0 1 .5.5v.5h.5a.5.5 0 0 1 .5.5v.5h.293l6.5-6.5zm-9.761 5.175-.106.106-1.528 3.821 3.821-1.528.106-.106A.5.5 0 0 1 5 12.5V12h-.5a.5.5 0 0 1-.5-.5V11h-.5a.5.5 0 0 1-.468-.325z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  Edit
+                </button>
+                <button class="card-item__button button--open-more">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width="16"
+                    height="16"
+                    fill="currentColor"
+                    class="bi bi-three-dots"
+                    viewBox="0 0 16 16"
+                  >
+                    <path
+                      class="card-item__dots"
+                      d="M3 9.5a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3zm5 0a1.5 1.5 0 1 1 0-3 1.5 1.5 0 0 1 0 3z"
+                      fill="#000000"
+                    ></path>
+                  </svg>
+                  More
+                </button>
+              </div>
+            </li> -->
+          </ul>
+        </div>
+      </div>
+    </section>
+    <!-- Login modal -->
+    <!-- <div class="modal">
+      <div action="#" class="modal__window">
+        <div class="modal-closed-btn">
+          <span class="modal-closed-btn__line"></span>
+          <span class="modal-closed-btn__line"></span>
+        </div>
+        <form action="#">
+          <h2 class="modal__name">Log in</h2>
+          <label class="modal__input-name">Login</label>
+          <input type="text" class="modal__input" placeholder="Login" />
+          <label class="modal__input-name">Passwort</label>
+          <input type="text" class="modal__input" placeholder="Password" />
+          <p class="modal__invalid-date">Incorrect username or password*</p>
+          <button class="modal__button">Log in</button>
+        </form>
+      </div>
+    </div> -->
+    <!-- Create visit modal -->
+    <!-- <div class="modal">
+      <div action="#" class="modal__window">
+        <h2 class="modal__name">Create visit</h2>
+        <select name="" id="" class="modal__select">
+          <option value="none" disabled selected hidden class="modal__select-option">Select doctor</option>
+          <option value="cardio">Cardiologist</option>
+          <option value="dentist">Dentist</option>
+          <option value="therapeft">Therapist</option>
+        </select>
+        <input type="text" class="modal__input" placeholder="The purpose of the visit" />
+        <input type="text" class="modal__input" placeholder="A brief description of the visit" />
+        <select name="" id="" class="modal__select">
+          <option value="none" disabled selected hidden class="modal__select-option">Urgency</option>
+          <option value="cardio">High</option>
+          <option value="cardio">Normal</option>
+          <option value="cardio">Low</option>
+        </select>
+        <input type="text" class="modal__input" placeholder="Name" />
+        <input type="text" class="modal__input" placeholder="Body mass index" />
+        <input type="text" class="modal__input" placeholder="Normal pressure" />
+        <input type="text" class="modal__input" placeholder="Transferred diseases of the CS" />
+        <input type="text" class="modal__input" placeholder="Age" />
+        <input type="text" class="modal__input" placeholder="Data of the last visit" />
+        <button class="modal__button">Create visit</button>
+      </form>
+    </div> -->
+  </body>
+</html>
